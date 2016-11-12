@@ -1,0 +1,23 @@
+<nav class="nav-spotify">
+    <div class="header-spotify">
+        <a href="/">
+            <img alt="Spotify" class="logo-spotify" src="http://www.clker.com/cliparts/5/c/a/f/141490005811489798026274.spotify-logo-horizontal-white-rgb-hi.png">
+        </a>
+        <%= form_tag artists_path, method: "get", html: { class: "form" } do %>
+            <div class="form form-artist">
+            <%= text_field_tag(:artist_name, "", value: params[:artist_name]) %>
+            </div>
+        <% end %>
+    </div>
+    <div class="menu-spotify">
+        <span>By Emerson Laurentino and Victor Meneghini</span>
+    </div>
+</nav>
+<div class="content-spotify">
+    <% @artists.each do |artist| %>
+        <a href="<%= artist_path(artist.id) %>" class="capa-spotify">
+            <img src="<%= renderArtistImage artist.images %>">
+            <span><%= artist.name %></span>
+        </a>
+    <% end %>
+</div>

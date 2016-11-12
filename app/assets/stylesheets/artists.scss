@@ -1,0 +1,102 @@
+.nav-spotify {
+    background: #43A047;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 20px);
+    z-index: 200;
+
+    .header-spotify {
+        display: flex;
+        align-items: center;
+
+        .logo-spotify {
+            height: 50px;
+        }
+        .form-artist {
+            margin-left: 30px;
+
+            input {
+                width: 300px;
+            }
+        }
+    }
+
+    .menu-spotify {
+        display: flex;
+        align-items: center;
+
+        span {
+            color: #fff;
+            margin-left: 10px;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+    }
+}
+.content-spotify {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: 70px;
+
+    .capa-spotify {
+        display: flex;
+        text-decoration: none;
+        width: calc(16.66% - 10px);
+        flex-direction: column;
+        margin: 5px;
+        position: relative;
+        justify-content: center;
+        background: #e5e5e5;
+        border-radius: 5px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            max-height: calc(100% - 40px);
+        }
+        span {
+            display: flex;
+            font-weight: bold;
+            color: #43A047;
+            align-items: center;
+            padding: 10px;
+        }
+    }
+}
+.content-show-spotify {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: 70px;
+
+    .capa-spotify {
+        display: flex;
+        text-decoration: none;
+        width: calc(25% - 10px);
+        flex-direction: column;
+        margin: 5px;
+        position: relative;
+        background: #e5e5e5;
+        border-radius: 5px;
+        overflow: hidden;
+        color: #666;
+        img {
+            width: 100%;
+            max-height: calc(100% - 40px);
+        }
+        span {
+            display: flex;
+            font-weight: bold;
+            color: #43A047;
+            align-items: center;
+            padding: 10px;
+        }
+    }
+}

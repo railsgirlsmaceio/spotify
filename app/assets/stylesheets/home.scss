@@ -1,0 +1,31 @@
+.home {
+    background: #43A047;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo-spotify {
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 25px;
+    }
+
+    .form-home {
+        width: 100%;
+        max-width: 450px;
+
+        input[type='text'] {
+            flex: 1;
+            width: calc(100% - 100px);
+
+        }
+        input[type='button'] {
+            width: 100px;
+            cursor: pointer;
+        }
+    }
+}
